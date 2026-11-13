@@ -1,0 +1,64 @@
+body{
+    background:#eef2f7;
+    font-family:'Segoe UI',sans-serif;
+}
+
+.portal-container{
+    background:#ffffff;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.titulo-portal{
+    color:#183153;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.menu-custom{
+    background:#e8edf3;
+    border-radius:12px;
+}
+
+.nav-link{
+    color:#183153 !important;
+    font-weight:600;
+}
+
+.nav-link:hover{
+    color:#0a7c86 !important;
+}
+
+.card{
+    border:none;
+    border-radius:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+.card:hover{
+    transform:translateY(-4px);
+    transition:.3s;
+}
+
+.btn-primary{
+    background:#0a7c86;
+    border:none;
+}
+
+.btn-primary:hover{
+    background:#075863;
+}
+
+.resultado{
+    background:#f0f8ff;
+    border-left:5px solid #0a7c86;
+    padding:20px;
+    border-radius:10px;
+}
+
+.carousel img{
+    height:450px;
+    object-fit:cover;
+    border-radius:15px;
+}

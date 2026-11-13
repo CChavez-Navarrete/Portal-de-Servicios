@@ -1,0 +1,53 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+<h2>Cálculo de Salario</h2>
+
+<form method="POST">
+
+    <div class="mb-3">
+
+        <label>Horas Trabajadas</label>
+
+        <input
+            type="number"
+            step="any"
+            class="form-control"
+            name="horas">
+
+    </div>
+
+    <div class="mb-3">
+
+        <label>Pago por Hora</label>
+
+        <input
+            type="number"
+            step="any"
+            class="form-control"
+            name="pago_hora">
+
+    </div>
+
+    <button class="btn btn-primary">
+        Calcular
+    </button>
+
+</form>
+
+{% if resultado %}
+
+<div class="resultado mt-4">
+
+    <p>Horas: {{ resultado.horas }}</p>
+
+    <p>Pago Hora: ${{ resultado.pago }}</p>
+
+    <p>Salario Total: ${{ resultado.salario }}</p>
+
+</div>
+
+{% endif %}
+
+{% endblock %}
